@@ -13,5 +13,5 @@ else if(media < 40){
 }
 else{
     console.log('a nota é',media,' o aluno ta na recuperação');
-    
-}
+     
+} 
