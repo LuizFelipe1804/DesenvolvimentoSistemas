@@ -8,5 +8,5 @@ if(n1 % 2 == 0){
 }
 
 else{
-    console.log('o número é par'); 
+    console.log('o número é impar'); 
 }
