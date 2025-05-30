@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um programa que leia várias palavras até que seja digitada a palavra “sair”. Conte quantas
+vezes foi digitada a palavra “oi”. sem os comentarios e em javascript
+    </p>
+    <script>
+        function contarOi() {
+  let contadorOi = 0;
+
+  while (true) {
+    let palavra = prompt("Digite uma palavra (ou 'sair' para encerrar):").toLowerCase();
+
+    if (palavra === "sair") {
+      break;
+    }
+
+    if (palavra === "oi") {
+      contadorOi++;
+    }
+  }
+
+  alert(`A palavra 'oi' foi digitada ${contadorOi} vez(es).`);
+}
+
+contarOi();
+
+    </script>
+</body>
+</html>

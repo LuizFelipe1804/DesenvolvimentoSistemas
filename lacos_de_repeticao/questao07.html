@@ -10,20 +10,32 @@
         que o usuário digite valor 0;
     </p>
     <script>
-        let media = 0;
-        soma = 0;
-        
-        while (true) {
-            let n = Number(prompt("digite um numero: "));
-            if (n === 0) {
-                break;
-            }
-            soma = n + n
-            media = soma/n
-            
-        }
-        document.writeln(`Total ${media}</h1>`);
-        
+        function calcularMedia() {
+  let soma = 0;
+  let contador = 0;
+
+  while (true) {
+    let numero = parseFloat(prompt("Digite um número (0 para finalizar):"));
+
+    if (numero === 0) {
+      break;
+    }
+
+    soma += numero;
+    contador++;
+  }
+
+  if (contador > 0) {
+    let media = soma / contador;
+    alert(`A média aritmética dos números é: ${media.toFixed(2)}`);
+  } else {
+    alert("Nenhum número válido foi digitado.");
+  }
+}
+
+calcularMedia();
+
+
     </script>
 </body>
 </html>
