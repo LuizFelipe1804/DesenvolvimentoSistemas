@@ -1,1 +1,42 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um programa que leia várias palavras distintas até que seja digitada uma String vazia “”.
+        Após isso, o programa deve exibir a palavra de menor e a de maior tamanho. O tamanho de uma
+        String é determinada pelo número de caracteres que ele possui.
+
+    </p>
+    <script>
+        let palavras = [];
+let palavra;
+
+while (true) {
+  palavra = prompt("Digite uma palavra (ou deixe em branco para sair):");
+  if (palavra === "") break;
+  palavras.push(palavra);
+}
+
+let menor = palavras[0];
+let maior = palavras[0];
+
+for (let i = 1; i < palavras.length; i++) {
+  if (palavras[i].length < menor.length) {
+    menor = palavras[i];
+  }
+  if (palavras[i].length > maior.length) {
+    maior = palavras[i];
+  }
+}
+
+console.log("Menor palavra:", menor);
+console.log("Maior palavra:", maior);
+
+    </script>
+</body>
+</html>
