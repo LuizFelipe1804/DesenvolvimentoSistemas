@@ -6,7 +6,7 @@ carros.push('onix');
 carros.push('fusca');
 
 // alterando elementos do array
-carros[2] = "amarok"
+carros[2] = "amarok";
 
 //removendo o ultimo elemento
 carros.pop();
