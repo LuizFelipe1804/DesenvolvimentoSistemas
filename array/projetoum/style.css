@@ -32,6 +32,6 @@ h2{
     cursor: pointer;
 }
 #exibir-array{
-    background-color: orange;
-    color:white;
+    background-color: rgb(13, 255, 0);
+    color:rgb(60, 9, 179);
 }
